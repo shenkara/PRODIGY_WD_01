@@ -1,0 +1,333 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        } 
+      
+    
+    .container{
+    background-color:beige;
+    height:100%;
+    width:100%;
+    overflow-x:none;
+    
+    }
+    
+    .navcontainer{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    background: rgb(180,34,195);
+background: linear-gradient(0deg, rgba(180,34,195,1) 0%, rgba(253,97,45,1) 100%);
+    min-height:70px;
+    position:relative;
+    }
+    #navlist{
+    width:100%;
+    list-style:none;
+    font-size:2.8rem;
+    display:flex;
+    padding:15px;
+    justify-content:space-around;
+    align-items:center;
+    }
+    #navlogo{
+    font-size:2.8rem;
+    }
+    
+    nav{
+    width:100%;
+    padding-right:2rem;
+    overflow-x:none;
+    }
+    
+    #navlogo{
+    color:white;
+    }
+    
+    a{
+    text-decoration:none;
+    color:white;
+    }
+    
+    #navitems{
+    display:flex;
+    gap:40px;
+    font-size: 40px;
+    }
+
+    .intro {
+        height: calc(100vh - 112px);
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        background-color: lightgray;
+        background-image: url('https://th.bing.com/th/id/R.4693547a1e89d3410d08108b5c896504?rik=kWE6W8ZdUT8ZFg&riu=http%3a%2f%2fwww.india.com%2fwp-content%2fuploads%2f2017%2f08%2ffootwear.jpg&ehk=pWXu4Vcp4LGQAxgHOiKnqXxUVx98Sw869rOMj2M3cDU%3d&risl=&pid=ImgRaw&r=0');
+        background-repeat: no-repeat;
+        background-attachment: scroll; 
+        background-size:100%;
+        color:rgb(238, 240, 240);
+      
+      }
+      
+      .intro-content {
+        height: 100%;
+      }
+      
+      .intro h1 {
+        margin-top: 50px;
+        line-height: 1.3;
+        font-weight: 600;
+        font-size: 50px;
+        text-align: center;
+      }
+      
+      .intro h2 {
+        line-height: 1.3;
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+      }
+      
+      
+      .intro  h3 {
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+      }
+      
+      .btn {
+        display: inline-block;
+        border-radius: 80px;
+        background-color: #3ad32f;
+        padding: 20px 80px;
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+        box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+        margin-top: 75px;
+        margin-left: 600px;
+      }
+
+
+
+
+    #footerbox{
+      background: rgb(180,34,195);
+      background: linear-gradient(0deg, rgba(180,34,195,1) 0%, rgba(253,97,45,1) 100%);
+    color:white;
+    width:100%;
+    text-align:center;
+    min-height:40px;
+    }
+    #footerbox p{
+    color:white;
+    font-size: 1.2rem;
+    padding: 10px;
+    }
+    
+    .contentbox{
+    width:70%;
+    margin:auto;
+    padding:3rem;
+    box-shadow:0px 0px 30px black;
+    display:flex;
+    flex-direction:column;
+    gap:100px;
+    }
+    .item{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    }
+    .rightbox{
+    position:relative;
+    overflow:hidden;
+    transition:all 0.3s linear 0s;
+    box-shadow:1px 1px 10px black;
+    border-radius:20px;
+    }
+    
+    
+    .rightbox img{
+    height:380px;
+    width:400px;
+    border-radius:20px;
+    transition:all o.6s linear 0s;
+    }
+    
+    .rightbox:hover{
+    transform:scale(1.1);
+    border-radius:20px;
+    }
+    
+    .rightbox .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(36,34,34,0.713);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    opacity:0;
+    transition:all 0.3s linear 0s;
+    }
+    
+    .rightbox:hover .overlay{
+    opacity:1;
+    }
+    .rightbox .overlay span{
+    color:white;
+    font-size:1.2rem;
+    }
+    
+    .leftbox{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    height:400px;
+    width:400px;
+    font-size: 20px;
+    }
+    
+    .leftbox h2{
+    font-size:2rem;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        /* Styles for screens up to 768px wide */
+        .contentbox {
+            width: 90%;
+        }
+    
+        .rightbox img {
+            height: 300px;
+            width: 300px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        /* Styles for screens up to 480px wide */
+        .contentbox {
+            width: 95%;
+        }
+    
+        .rightbox img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+/* Your existing CSS code here */
+
+#navlist {
+    width: 100%;
+    list-style: none;
+    font-size: 2.8rem;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navitems {
+    display: flex;
+    gap: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+    #navlist {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 2.2rem;
+    }
+
+    #navitems {
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide */
+    #navlist {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+
+    #navitems {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+    
+.section {
+    padding: 160px 0 0 0;
+  }
+.benefit-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 80px;
+  }
+  
+  .benefit {
+    border: 2px solid #ccc;
+    padding: 16px 16px 32px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+  }
+  
+  .benefit .icon {
+    color:  #4444e8;
+    font-size: 64px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .benefit h4 {
+    margin-bottom: 5px;
+  }
+  
+  .benefit .text {
+    font-size: 24px;
+    color: #777;
+  }
+
+  .A{
+    font-size: x-large;
+    color:black;
+
+  }
+  section{
+    display: block;
+  }
+#para{
+    margin-top: 100px;
+    font-size: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bolder;
+    color:#0e0e71
+    
+}
+
+
+  
